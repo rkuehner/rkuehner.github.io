@@ -4,57 +4,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebecca Kuehner | Portfolio</title>
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/06a7cc0ef6/UntitledProject/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Playfair+Display:400,700|Raleway:400,500,600" rel="stylesheet">
   </head>
   <body>
       <!-- NAVBAR -->
       <nav>
-        <ul class="header">
-          <li><a class="navlink" href="index.html"><img class="rklogo" src="images/rk-logo.svg" alt ="RK"></a></li>
-          <li><a class="navlink" href="">Work</a></li> <!-- LINK THIS -->
-          <li><a class="navlink" href="about.html">About</a></li>
-          <li><a class="navlink" href="">Resume</a> <!-- LINK THIS --></li>
+        <ul class="nav-container">
+          <li class="navlink left"><a class="headerlink" href="index.html"><img class="rklogo" src="images/rk-logo.svg" alt ="RK"></a></li>
+          <li class="navlink underline"><a href="index.html#projects">Work</a></li>
+          <li class="navlink underline"><a href="about.html">About</a></li>
+          <li class="navlink underline"><a href="">Resume</a> <!-- LINK THIS --></li>
         </ul>
       </nav>
 
       <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <h1>Hello, I'm Rebecca.</h1>
-          <h2>A UX/UI designer based in the NYC area.</h2>
-          <p>Take a look around to view my work. Want to get in touch? Feel free to contact me at rkuehner@gmail.com.</p>
-        </div>
+      <section class="home-hero container">
+        <h1>Hello, I'm Rebecca.</h1>
+        <h2>A <span class="semi-bold">UX/UI designer</span> based in the <span class="semi-bold">NYC</span> area.</h2>
+        <p>Take a look around to view my work. Want to get in touch? Feel free to contact me at <a class="email" href="mailto:rkuehner@gmail.com">rkuehner@gmail.com</a>.</p>
+        <img class="down-arrow" src="images/down-arrow.svg" alt="scroll down">
       </section>
 
       <!-- PROJECTS -->
-      <section class="projects">
+      <section id="projects">
+        <div class="container">
         <img class="pouch-name" src="images/pouch-logo.svg" alt ="Pouch Logo">
-        <h3>iOS AND DESKTOP APP</h3>
-        <p>Pouch is a SaaS cloud storage solution that enables users to store, share, collaborate, and organize their files online.</p>
-        <a href="pouch.html">View Case Study</a>
+        <h3 class="sub-heading">iOS AND DESKTOP APP</h3>
+        <p class="project-description">Pouch is a SaaS cloud storage solution that enables users to store, share, collaborate, and organize their files online.</p>
+        <a class="upper home-link" href="pouch.html">View Case Study</a>
         <img class="pouch-mockup" src="images/pouch-cs-mobile.png" alt ="Pouch Mockup">
+      </div>
       </section>
 
       <!-- ABOUT -->
-      <section class="about"><div class="set-margin">
-        <h2>About me</h2>
+      <section class="about container">
+        <h2 class="playfair-heading">About me</h2>
         <p>My background in art was a natural stepping stone in my journey. As a designer I combine my love of great visuals with my detail-oriented personality and need to solve problems. While my past has been varied, my love of learning and challenging myself has remained the same.</p>
-        <a href="about.html">Learn More</a>
-      </div></section>
+        <a class="upper home-link" href="about.html">Learn More</a>
+      </section>
 
       <!-- FOOTER -->
       <footer>
         <p>Thank you for stopping by.</p>
-        <p>Let's Connect!</p>
+        <p id="connect">Let's Connect!</p>
         <ul>
-          <li><span class="icon-envelope"></span></li>
-          <li><span class="icon-linkedin"></span></li>
-          <li><span class="icon-github"></span></li>
-          <li><span class="icon-instagram"></span></li>
+          <li class="social-list"><a href="mailto:rkuehner@gmail.com"><i class="fas fa-envelope social"></i></a></li>
+          <li class="social-list"> <a href="https://www.linkedin.com/in/rebeccakuehner" target="_blank"><i class="fab fa-linkedin social"></i></a></li>
+          <li class="social-list"><a href="https://github.com/rkuehner" target="_blank"><i class="fab fa-github social"></i></a></li>
+          <li class="social-list"><a href="https://www.instagram.com/rkuehner/" target="_blank"><i class="fab fa-instagram social"></i></a></li>
         </ul>
-        <p>&copy2019 Designed and Developed by Rebecca Kuehner</p>
+        <p id="copyright">&copy2019 Designed and Developed by Rebecca Kuehner</p>
       </footer>
+
   </body>
 </html>

@@ -4,51 +4,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebecca Kuehner | About</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/06a7cc0ef6/UntitledProject/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Playfair+Display:400,700|Raleway:400,500,600" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR -->
     <nav>
-      <ul class="header">
-        <li><a class="navlink" href="index.html"><img class="rklogo" src="images/rk-logo.svg" alt ="RK"></a></li>
-        <li><a class="navlink" href="">Work</a></li> <!-- LINK THIS -->
-        <li><a class="navlink" href="about.html">About</a></li>
-        <li><a class="navlink" href="">Resume</a> <!-- LINK THIS --></li>
+      <ul class="nav-container">
+        <li class="navlink left"><a class="headerlink" href="index.html"><img class="rklogo" src="images/rk-logo.svg" alt ="RK"></a></li>
+        <li class="navlink underline"><a href="index.html#projects">Work</a></li>
+        <li class="navlink underline"><a href="about.html">About</a></li>
+        <li class="navlink underline"><a href="">Resume</a> <!-- LINK THIS --></li>
       </ul>
     </nav>
 
     <section class="greeting">
       <h1>Nice to meet you!</h1>
       <h2>I'm Rebecca</h2>
-      <img class="rkimage" src="images/about-image-1.png" alt ="Rebecca">
     </section>
 
-    <section class="about-me">
-      <h3>My journey towards design</h3>
-      <h4>The earlier years</h4>
-      <p>I’ve loved art for as long as I can remember, and growing up it was always my favorite class in school. I love the creativity it allows me and the satisfaction of making something with my hands. But I had one other favorite subject as well - math. Yes, I was that weird kid that actually liked math. I enjoy analyzing situations and finding a solution to tricky problems, and I’ve always felt the struggle of balancing these two very different sides of myself.</p>
-      <p>In college I pursued the direction of art. I received my BA in Visual Arts with a concentration in Art and Technology. In addition to all of the standard art courses, I got to take classes in video editing and 3D computer animation and learn programs like Photoshop, Cinema 4D, and Final Cut Pro. I always felt like something was missing, however. I wanted more of a purpose for my work, and the lack of structure and rules in art doesn’t fit my detail-oriented personality. I’ve always found that despite my best intentions, I will inevitably end up with the tiniest paint brush in my hand painting in every minuscule detail.</p>
-      <p>More recently I spent two years living in Hawaii. While I was there I worked at the front desk of a timeshare resort on Waikiki Beach (hello beautiful view!) where I learned to listen to guests’ needs and solve problems. Working in hospitality is all about people - connecting with them, empathizing with them, and creating a positive experience. This was a great eye-opener for me in discovering how much I enjoy helping people and making their day better.</p>
-      <h4>Putting it all together</h4>
-      <p>Over time I’ve realized my passion lays more with design than art, as it still allows me to explore my creative side, but with more structure and purpose. It was once I started delving into user experience and interface design that I had my aha, lightbulb going off, moment. This was it, exactly what I wanted to be doing. This is where all those varied past experiences come together, where I can use both my visual side and my analytical nature to come up with solutions that solve problems and help people. In short, I discovered that UX design perfectly combines what I’m most passionate about with where my strengths lie, and I’ve since embarked on my journey into UX design, UI design, and frontend coding. If you want to get in touch, I’d love to chat!</p>
+    <section>
+      <img class="rkimage center" src="images/about-image-1.png" alt ="Rebecca">
+    </section>
+
+    <section class="about-me container">
+      <h3 class="playfair-heading horizontal-line">My journey towards design</h3>
+      <div>
+        <h4 class="small-title">The earlier years</h4>
+        <p class="paragraph">I’ve loved art for as long as I can remember, and growing up it was always my favorite class in school. I love the creativity it allows me and the satisfaction of making something with my hands. But I had one other favorite subject as well - math. Yes, I was that weird kid that actually liked math. I enjoy analyzing situations and finding a solution to tricky problems, and I’ve always felt the struggle of balancing these two very different sides of myself.</p>
+        <p class="paragraph">In college I pursued the direction of art. I received my BA in Visual Arts with a concentration in Art and Technology. In addition to all of the standard art courses, I got to take classes in video editing and 3D computer animation and learn programs like Photoshop, Cinema 4D, and Final Cut Pro. I always felt like something was missing, however. I wanted more of a purpose for my work, and the lack of structure and rules in art doesn’t fit my detail-oriented personality. I’ve always found that despite my best intentions, I will inevitably end up with the tiniest paint brush in my hand painting in every minuscule detail.</p>
+        <p class="paragraph space-below">More recently I spent two years living in Hawaii. While I was there I worked at the front desk of a timeshare resort on Waikiki Beach (hello beautiful view!) where I learned to listen to guests’ needs and solve problems. Working in hospitality is all about people - connecting with them, empathizing with them, and creating a positive experience. This was a great eye-opener for me in discovering how much I enjoy helping people and making their day better.</p>
+        <h4 class="small-title">Putting it all together</h4>
+        <p class="paragraph">Over time I’ve realized my passion lays more with design than art, as it still allows me to explore my creative side, but with more structure and purpose. It was once I started delving into user experience and interface design that I had my aha, lightbulb going off, moment. This was it, exactly what I wanted to be doing. This is where all those varied past experiences come together, where I can use both my visual side and my analytical nature to come up with solutions that solve problems and help people. In short, I discovered that UX design perfectly combines what I’m most passionate about with where my strengths lie, and I’ve since embarked on my journey into UX design, UI design, and frontend coding. If you want to get in touch, I’d love to chat!</p>
+      </div>
     </section>
 
     <section class="connect">
-      <h3>Say hello</h3>
-      <p>Send me an email, connect on LinkedIn, or view my resume if you want to learn more.</p>
+      <div class="contact-container">
+        <h3 class="playfair-heading horizontal-line">Say hello</h3>
+        <p class="paragraph">Send me an <a href="mailto:rkuehner@gmail.com">email</a>, connect on <a href="https://www.linkedin.com/in/rebeccakuehner" target="_blank">LinkedIn</a>, or view my <a href="#">resume</a> if you want to learn more.</p> <!-- LINK THE RESUME!!!!!!!! -->
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
       <p>Thank you for stopping by.</p>
-      <p>Let's Connect!</p>
+      <p id="connect">Let's Connect!</p>
       <ul>
-        <li><span class="icon-envelope"></span></li>
-        <li><span class="icon-linkedin"></span></li>
-        <li><span class="icon-github"></span></li>
-        <li><span class="icon-instagram"></span></li>
+        <li class="social-list"><a href="mailto:rkuehner@gmail.com"><i class="fas fa-envelope social"></i></a></li>
+        <li class="social-list"> <a href="https://www.linkedin.com/in/rebeccakuehner" target="_blank"><i class="fab fa-linkedin social"></i></a></li>
+        <li class="social-list"><a href="https://github.com/rkuehner" target="_blank"><i class="fab fa-github social"></i></a></li>
+        <li class="social-list"><a href="https://www.instagram.com/rkuehner/" target="_blank"><i class="fab fa-instagram social"></i></a></li>
       </ul>
-      <p>&copy2019 Designed and Developed by Rebecca Kuehner</p>
+      <p id="copyright">&copy2019 Designed and Developed by Rebecca Kuehner</p>
     </footer>
+
   </body>
 </html>

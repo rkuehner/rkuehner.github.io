@@ -3,61 +3,606 @@
 }
 
 html {
+  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
 }
 
-
-/*HEADER*/
-nav {
-  background-color: #FDF2F4;
-}
-
-.rklogo {
-  height: 3.4rem;
-}
-
-/* HERO*/
-.hero {
-  background-color: purple;
-}
-
-/* PROJECTS */
-.projects {
-  background-color: gray;
-}
-
-.pouch-name {
-  width:124px;
-}
-
-.pouch-mockup {
-  width: 95vw;
-}
-
-/* ABOUT */
-.about {
-  background-color: blue;
-}
-
-.set-margin {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* FOOTER */
-footer {
-  background-color: lightyellow;
-  grid-area: footer;
-}
-
-section, .header, footer{
+/* MAIN TEXT COLOR */
+h1, h2, h3, h4, h5, h6, p {
   color: #241F20;
+}
+
+/* FONTS */
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
   font-size: 1.6rem;
 }
 
-.social-icon {
-  width: 20px;
+.paragraph {
+  line-height: 160%;
+  padding: 10px 0;
 }
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.sub-heading, .small-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.playfair-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+}
+
+
+/* LINKS */
+a {
+  color: #FF668A;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+a.upper {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.home-link {
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+a:hover {
+  color: #E9358B;
+}
+
+/* MARGINS */
+.container {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.center {
+  display: block;
+  margin: 0 auto
+}
+
+.center-text {
+  display: block;
+  text-align: center;
+}
+
+.absolute-center {
+  left: 50%;
+  margin: 0;
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.space-below {
+  margin-bottom: 2rem;
+}
+
+.full-screen-width {
+  width: 100vw;
+}
+
+.buffer {
+  padding: 10px 0;
+}
+
+/*************** NAVBAR *******************/
+nav {
+  background-color: #FDF2F4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.nav-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+li.navlink {
+  flex-grow: 1;
+  text-align: right;
+}
+li.left {
+  flex-grow: 0;
+  text-align: left;
+}
+
+li.navlink a{
+  color: #2E2729;
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+
+li.underline a:hover {
+  color: #1A9BB0;
+  font-weight: 600;
+}
+
+li.underline a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1A9BB0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li.underline a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.rklogo {
+  height: 3rem;
+}
+
+
+
+/******** FOOTER *************/
+footer {
+  background-color: #241F20;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer > p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  padding: 4px;
+  size: 18px;
+}
+
+#connect {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.social-list {
+  display: inline-block;
+}
+
+.social {
+  color: white;
+  font-size: 20px;
+  margin: 12px;
+}
+
+#copyright {
+  font-size:12px;
+  padding: 25px 0 15px 0;
+}
+
+.social:hover {
+  color: #F9D2D9;
+}
+
+
+/*********************************** HOMEPAGE *******************************************/
+/*HERO*/
+.home-hero {
+  margin-top: 19rem;
+}
+
+.home-hero > h1 {
+  font-size: 4.6rem;
+  font-weight: bold;
+  line-height: 90%;
+  padding: 1.5rem 0;
+}
+
+.home-hero > h2 {
+  border-bottom: 1px solid #241F20;
+  font-size: 2.2rem;
+  line-height: 110%;
+  padding: 2rem 0;
+}
+
+.home-hero > p {
+  color: #626161;
+  font-size: 1.6rem;
+  line-height: 140%;
+  margin-bottom: 13rem;
+  padding: 2rem 0;
+}
+
+.email {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+.down-arrow {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2.4rem;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* PROJECTS */
+#projects {
+  background-color: #F5F5F5;
+}
+
+.pouch-name {
+  margin-top: 70px;
+  padding: 10px 0;
+  width:124px;
+}
+
+.project-type {
+  padding: 5px 0;
+}
+
+.project-description {
+  line-height: 130%;
+  padding: 30px 0;
+}
+
+.pouch-mockup {
+  margin-bottom: 50px;
+  padding: 30px 0;
+  width: 90vw;
+}
+
+
+/* ABOUT */
+.about {
+  padding: 100px 0;
+}
+
+.about > h2 {
+  border-bottom: 1px solid #241F20;
+  padding-bottom: 10px;
+}
+
+.about > p {
+  line-height: 130%;
+  padding: 25px 0;
+}
+
+
+
+/********************************** ABOUT PAGE *************************************************/
+.greeting {
+  background-color: #FDF2F4;
+  margin-top: 6rem;
+  padding: 5rem 0 25rem 0;
+  text-align: center;
+}
+
+.greeting > h1 {
+  font-size: 3.6rem;
+}
+
+.greeting > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  padding-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+.rkimage {
+  background-color: #FDF2F4;
+  max-width: 90vw;
+  position: relative;
+  top: -21rem;
+  z-index: 1;
+}
+
+/* Bio Section */
+.about-me {
+  position: relative;
+  top: -17rem;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #241F20;
+  padding-bottom: 2rem;
+}
+
+.about-me > div {
+  margin-top: 1.5rem;
+}
+
+/*Say hello */
+.connect {
+  background-color: #F5F5F5;
+  padding: 3.5rem 0;
+  position: relative;
+  text-align: center;
+  top: -10rem;
+}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.connect > .playfair-heading {
+  font-size: 2.6rem;
+}
+
+.contact-container > .paragraph {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+}
+
+
+/*********************************************** CASE STUDY ***************************************************************/
+/* Hero Unit */
+.cs-hero {
+  margin-top: 11rem;
+}
+
+.new-section {
+  background-color: #1A9BB0;
+  color: white;
+  font-size: 2.4rem;
+  margin: 30px 0 40px 0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.cs-hero > .sub-heading {
+  padding: 1.5rem 0;
+}
+
+.cs-hero > a {
+  padding: 3rem 0;
+}
+
+.my-role {
+  background-color: #F5F5F5;
+  margin: 30px 0 70px 0;
+  padding: 50px 0;
+}
+
+
+/* Sections and Spacing */
+.sub-section {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 0 .7rem 0;
+}
+
+.gap {
+  padding-bottom: 60px;
+}
+
+
+/* User Persona */
+.persona-image {
+  max-width: 90vw;
+  padding: 1rem 0;
+}
+
+.persona > h4 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1rem 0 2.5rem 0;
+  text-transform: uppercase;
+}
+
+.persona > .paragraph {
+  font-size: 16px;
+  padding: 0;
+}
+
+.persona-bullets {
+  font-size: 16px;
+  text-align: left;
+  width: 85vw;
+}
+
+.quote {
+  border-left: 2px solid #241F20;
+  font-weight: 500;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+/* Branding */
+.full-image {
+  width: 90vw;
+}
+
+.images-flex {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
+
+
+/************************* POUCH ***************************/
+
+.pouch-hero-image {
+  padding-bottom: 1.5rem;
+  width: 90vw;
+}
+
+.pouch-heading {
+  width: 124px;
+}
+
+/* Survey Results*/
+.background.container {
+  width: 100vw;
+}
+
+.survey-background {
+  background-attachment: fixed;
+  background-image: url("../images/pouch/computer-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  padding: 50px 0;
+}
+.survey-results {
+  color: white;
+  font-size: 1.8rem;
+  text-align: left;
+  width: 80vw;
+}
+
+.bullet {
+  line-height: 130%;
+  list-style-type: disc;
+  padding-bottom: 10px;
+}
+
+/* Information Architecture */
+.ia-image {
+  background-image: url("../images/pouch/user-flows.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin: 10px 0 100px 0;
+  position: relative;
+}
+
+.inner-box {
+  background-color: white;
+  max-width: 360px;
+  padding: 2rem;
+  width: 90vw;
+}
+
+/* Branding */
+.branding-container {
+  background-color: #F5F5F5;
+  margin: 80px 0;
+  padding-top: 40px;
+}
+
+.fonts, .colors {
+  max-width: 350px;
+  padding: 20px 0 50px 0;
+}
+
+.pouch-logos {
+  margin: 10px 0;
+}
+
+/* Wireframes */
+.background {
+  background-color: #F5F5F5;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+/* Final Design */
+.prototype {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 100px 0;
+}
+
+.mobile-icon {
+  color: #FF668A;
+  font-size: 10rem;
+}
+
+.mobile-icon:hover {
+  color: #E9358B;
+}
+
+
+
+
+
+/* OVERWRITE OTHER SPACING */
+
+.end-of-section {
+  margin-bottom: 70px;
+}
+
+.page-bottom {
+  margin-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*.full-width {
 	left: 50%;
@@ -71,8 +616,8 @@ section, .header, footer{
 
 /* TABLETS */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .about {
     background-color: orange;
   }
-}
+} */
