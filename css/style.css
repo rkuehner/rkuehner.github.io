@@ -83,7 +83,7 @@ a:hover {
 /* MARGINS */
 .container {
   margin: 0 auto;
-  width: 90vw;
+  width: 90%;
 }
 
 .center {
@@ -117,11 +117,6 @@ a:hover {
   padding: 10px 0;
 }
 
-/* Hide Elements */
-.hide-mobile {
-  display: none;
-}
-
 /*************** NAVBAR *******************/
 nav {
   background-color: #FDF2F4;
@@ -137,13 +132,13 @@ nav {
   flex-direction: row;
   height: 6rem;
   margin: 0 auto;
-  width: 90vw;
 }
 
 li.navlink {
   flex-grow: 1;
   text-align: right;
 }
+
 li.left {
   flex-grow: 0;
   text-align: left;
@@ -200,7 +195,6 @@ footer > p {
   color: white;
   font-family: 'Raleway', sans-serif;
   padding: 4px;
-  size: 18px;
 }
 
 #connect {
@@ -285,8 +279,13 @@ footer > p {
 
 
 /* PROJECTS */
-#projects {
+.projects {
   background-color: #F5F5F5;
+}
+
+.projects-container {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .pouch-name {
@@ -305,14 +304,13 @@ footer > p {
 }
 
 .pouch-mockup {
-  margin-bottom: 50px;
-  padding: 30px 0;
+  padding: 30px 0 80px 0;
   width: 90vw;
 }
 
 
 /* ABOUT */
-.about {
+.about-home {
   padding: 100px 0;
 }
 
@@ -381,7 +379,7 @@ footer > p {
 
 .contact-container {
   margin: 0 auto;
-  max-width: 90vw;
+  max-width: 90%;
 }
 
 .connect > .playfair-heading {
@@ -500,7 +498,7 @@ footer > p {
 
 /* Survey Results*/
 .background.container {
-  width: 100vw;
+  width: 100%;
 }
 
 .survey-background {
@@ -570,7 +568,6 @@ footer > p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  /* padding: 50px 0; */
 }
 
 .mobile-icon {
@@ -599,8 +596,147 @@ footer > p {
 }
 
 
+/***************** RESPONSIVE DESIGN ******************/
+
+/*** MOBILE ***/
+@media screen and (max-width: 767px) {
+.hide-mobile {
+  display: none;
+  }
+
+}
 
 
+
+/*** TABLETS ***/
+@media screen and (min-width: 768px) {
+  .hide-tablet {
+    display: none;
+  }
+
+/* HOMEPAGE */
+/* Header */
+  li.left {
+    padding-right: 10px;
+  }
+
+  li.navlink {
+    flex-grow: 0;
+  }
+
+  li.underline {
+    padding-left: 80px;
+  }
+
+  /* Navbar */
+  #my-name {
+    flex-grow: 1;
+  }
+
+  /* Hero */
+  .home-hero {
+    margin-top: 21rem;
+    text-align: center;
+    width: 595px;
+  }
+
+  .home-hero > h1 {
+    font-size: 58px;
+  }
+
+
+  /* Projects */
+
+  .projects-container {
+    display: flex;
+    padding: 100px 0;
+  }
+
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40vw;
+    text-align: left;
+  }
+
+
+  .home-cs-desktop {
+    align-self: center;
+    max-width: 60%;
+    padding-left: 1rem;
+  }
+
+  .pouch-name {
+    margin: 0;
+  }
+
+
+
+  /* About Me */
+  .about-home {
+    display: flex;
+    width: 595px;
+  }
+
+  .about-image-home {
+    height: 320px;
+    margin-right: 30px;
+    width: 242px;
+  }
+
+
+
+
+}
+
+
+
+
+
+/*** DESKTOP ***/
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+
+  /* Max width of container */
+  .container, .pouch-hero-image, .full-image, .projects-container {
+    max-width: 1200px;
+  }
+
+
+  /*** Homepage ***/
+  /* Hero */
+  .home-hero > h1 {
+    font-size: 67px;
+  }
+
+  .home-hero > p {
+    margin-bottom: 15rem;
+  }
+
+
+
+  /* Projects */
+  .project-info {
+    text-align: left;
+    max-width: 30vw;
+  }
+
+
+  .home-cs-desktop {
+    align-self: center;
+    max-width: 70%;
+  }
+
+
+
+
+
+
+}
 
 
 
