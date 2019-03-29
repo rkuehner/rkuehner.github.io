@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebecca Kuehner | Pouch</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <!-- Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -27,18 +29,24 @@
 
     <!-- HERO -->
     <section class="cs-hero container center">
-      <img class="pouch-hero-image" src="images/pouch/pouch-cs-mobile.png" alt ="Pouch Mockup">
+      <img class="pouch-hero-image hide-tablet" src="images/pouch/pouch-cs-mobile.png" alt ="Pouch Mockup">
+      <img class="pouch-hero-image hide-mobile" src="images/pouch/pouch-cs-desktop.png" alt ="Pouch Mockup">
       <img class="pouch-heading center" src="images/pouch-logo.svg" alt ="Pouch Logo">
-      <h4 class="center-text sub-heading uppercase">UX design | Visual design | Branding</h4>
-      <p class="center-text paragraph">Pouch is a Software as a Service cloud storage application for desktop and iOS that that enables users to store, share, collaborate, and organize their files online. With a simple, intuitive design, Pouch’s goal is to provide increased organization options that make it easier for users to locate their files.</p>
-      <div class="center-text cs-hero-link">
+      <div class=" container container-inner cs-hero-info">
+        <h4 class="center-text sub-heading uppercase">UX design | Visual design | Branding</h4>
+        <p class="center-text paragraph">Pouch is a Software as a Service cloud storage application for desktop and iOS that that enables users to store, share, collaborate, and organize their files online. With a simple, intuitive design, Pouch’s goal is to provide increased organization options that make it easier for users to locate their files.</p>
+      </div>
+      <div class="center-text cs-hero-link hide-tablet">
         <a class="semi-bold" href="https://invis.io/U6PEPT553MC" target="_blank">View Mobile Prototype</a>
+      </div>
+      <div class="center-text cs-hero-link hide-mobile">
+        <a class="semi-bold" href="https://invis.io/SYPEPSVRBMQ" target="_blank">View Desktop Prototype</a>
       </div>
     </section>
 
     <!-- MY ROLE -->
     <section class="my-role">
-      <div class="container">
+      <div class="container container-inner">
         <h2 class="sub-section">Design deliverables</h2>
         <p class="space-below">iOS and Desktop Prototypes | Branding</p>
         <h2 class="sub-section">Tools</h2>
@@ -49,7 +57,7 @@
     <!-- OVERVIEW -->
     <section class="overview">
       <h1 class="new-section">Overview</h1>
-      <div class="container">
+      <div class="container container-inner">
         <h2 class="sub-section">Problem</h2>
         <p class="paragraph gap">There are many cloud storage services already on the market, each with its own set of features and strengths. One thing these services have in common, however, is a lack of options when it comes to organization. These inadequate controls over how users can save, display, and search for their files is a major cause of frustration. In addition, people are saving content from the web in a different location from where their personal files are saved. Together this leads to disorganization and difficulty for users to locate their files when they need them.</p>
         <h2 class="sub-section">Solution</h2>
@@ -60,7 +68,7 @@
     <!-- RESEARCH & DISCOVERY -->
     <section class="research">
       <h1 class="new-section">Research & Discovery</h1>
-      <div class="container">
+      <div class="container container-inner">
         <h2 class="sub-section">Competitive analysis</h2>
         <p class="paragraph space-below">To see how Pouch could fit into the market, I chose to do a competitive analysis of Google Drive, Dropbox, and Pinterest. Google Drive and Dropbox, both extremely popular apps for cloud storage, excel in terms of backing up files, sharing, and collaboration. However, I found that they both lack when it comes to 1) organization options and 2) the ability to easily save links to websites. Pinterest, in contrast, is completely focused on organization and saving web content, but is not a place to backup personal files or create documents.</p>
         <p class="paragraph gap">What I discovered is there is need for an app that combines the functionality of traditional cloud storage services, like Dropbox and Google Drive, with the increased organization options and ability to easily save web content, like Pinterest.</p>
@@ -70,7 +78,7 @@
 
       <div class="background-container">
         <div class="survey-background">
-          <ul class="survey-results container bullets-container">
+          <ul class="survey-results container container-inner bullets-container">
             <li class="bullet space-below">92% of people use cloud storage, with Google Drive and Dropbox being the most popular</li>
             <li class="bullet space-below">The two most important features are accessing files from any device and backing up their files</li>
             <li class="bullet space-below">The two biggest frustrations are not enough options for organizing files and the difficulty to find files</li>
@@ -80,21 +88,38 @@
         </div>
       </div>
 
+      <!-- Personas -->
+      <h2 class="sub-section container container-inner">User personas</h2>
+      <div class="flex container container-inner">
+        <div class="persona two-column container container-inner gap">
+          <img class="flex-image persona-image" src="images/pouch/persona-1.png" alt ="Mariah L.">
+          <h3 class="persona-name playfair-heading bold">Mariah L.</h3>
+          <h4 class="sub-heading">26 | Photographer | Brooklyn, NY</h4>
+          <h5 class="small-title">Motivations</h5>
+          <p class="paragraph space-below">Mariah requires a lot of storage space to backup all of her photographs, and with so many files to sort through, she would love more options for organization. She also struggles to locate files and is hoping for a better solution. Mariah realizes that she will need to pay for the amount of storage space she needs, but as a young photographer living in the expensive NYC area she is hoping to keep this cost as low as possible.</p>
+          <h5 class="small-title">Frustrations</h5>
+          <ul class="persona-bullets container bullets-container">
+            <li class="bullet">Can't find her files</li>
+            <li class="bullet">Doesn't like the look and feel of other cloud storage interfaces</li>
+            <li class="bullet">It's expensive to pay for all the storage space she needs</li>
+          </ul>
+          <p class="quote">“I have so many photos to back up. I just want to keep everything organized and easy to locate.”</p>
+        </div>
 
-      <div class="persona container gap">
-        <h2 class="sub-section">User personas</h2>
-        <img class="persona-image" src="images/pouch/persona-1.png" alt ="Mariah L.">
-        <h3 class="persona-name playfair-heading bold">Mariah L.</h3>
-        <h4 class="sub-heading">26 | Photographer | Brooklyn, NY</h4>
-        <h5 class="small-title">Motivations</h5>
-        <p class="paragraph space-below">Mariah requires a lot of storage space to backup all of her photographs, and with so many files to sort through, she would love more options for organization. She also struggles to locate files and is hoping for a better solution. Mariah realizes that she will need to pay for the amount of storage space she needs, but as a young photographer living in the expensive NYC area she is hoping to keep this cost as low as possible.</p>
-        <h5 class="small-title">Frustrations</h5>
-        <ul class="persona-bullets container bullets-container">
-          <li class="bullet">Can't find her files</li>
-          <li class="bullet">Doesn't like the look and feel of other cloud storage interfaces</li>
-          <li class="bullet">It's expensive to pay for all the storage space she needs</li>
-        </ul>
-        <p class="quote">“I have so many photos to back up. I just want to keep everything organized and easy to locate.”</p>
+        <div class="persona two-column container container-inner gap hide-mobile">
+          <img class="flex-image persona-image" src="images/pouch/persona-2.png" alt ="Mariah L.">
+          <h3 class="persona-name playfair-heading bold">Ben S.</h3>
+          <h4 class="sub-heading">35 | Architect | Chicago, IL</h4>
+          <h5 class="small-title">Motivations</h5>
+          <p class="paragraph space-below">Ben uses cloud storage all the time for work. He needs to save many different types of files including documents, images, and videos, as well as content he finds from the web. Rather than create a document on his computer and then save it to the cloud, he wants the ability to create documents right in the app. Working on a team, it is also very important that he can share files with others and collaborate with them.</p>
+          <h5 class="small-title">Frustrations</h5>
+          <ul class="persona-bullets container bullets-container">
+            <li class="bullet">Saving web content is frustrating with other cloud storage apps</li>
+            <li class="bullet">Not enought free storage space</li>
+            <li class="bullet">Doesn’t like searching for his files when they’re not all in the same location</li>
+          </ul>
+          <p class="quote">“Saving, creating, sharing, collaborating. Basically I need it all for my work.”</p>
+        </div>
       </div>
     </section>
 
@@ -106,7 +131,7 @@
           <div class="inner-box absolute-center">
             <h2 class="sub-section">User stories & flows</h2>
             <p class="paragraph space-below">Based on all of the research I had done, I created user stories to detail what features would be included and to prioritize those features. These user stories were then turned into flows to understand how the user would move through the application.</p>
-            <a class="semi-bold" href="url">View User Flows</a>  <!-- CREATE LINK!! -->
+            <a class="semi-bold" href="https://drive.google.com/open?id=1PqPtDcPgnJsRgxpuPGM9Dml1bO4drxSp" target="_blank">View User Flows</a>
           </div>
         </div>
       </div>
@@ -115,29 +140,46 @@
       <!-- BRANDING -->
       <section class="branding">
         <h1 class="new-section">Branding</h1>
-          <div class="container">
+          <div class="container container-inner">
             <p class="paragraph space-below">When deciding on the overall look and feel of the brand, I thought about who my users are. Based on my research, I knew that cloud storage is used for both personal and professional use, and I had received feedback that many people did not like the look of the applications they currently used. I decided the branding for Pouch would be playful and fun, while still remaining professional. I then began working on the logo, color palette, and typography.</p>
-            <a class="semi-bold" href="url">View Style Guide</a>  <!-- CREATE LINK!! -->
+            <a class="semi-bold" href="https://drive.google.com/open?id=1cESKKyCABnN5BA5UaTYeGbZLdz3cbxVu" target="_blank">View Style Guide</a>
           </div>
 
           <div class="branding-container">
-            <div class="container">
-              <h2 class="sub-section">Colors</h2>
-              <p class="paragraph">Pouch’s color palette consists of turquoise blues and orange that evoke the fun look I was going for. These complimentary colors work well together, and orange is a vibrant color used for call to action buttons. I kept the color palette from becoming too bright and overwhelming and with muted tones and shades of gray.</p>
-              <img class="colors full-image" src="images/pouch/colors.png" alt="Pouch Colors">
-
-              <h2 class="sub-section">Typography</h2>
-              <p class="paragraph">Sansita One and Poppins work well with the logo and other elements used in the design as they all contain soft, rounded edges for a cohesive look. Sansita One is used sparingly on headings, while Poppins is used for most elements throughout the application. Poppins has a sense of friendliness and has high legibility and many font weights to choose from.</p>
-              <img class="fonts full-image" src="images/pouch/type.png" alt="Pouch Fonts">
+            <!-- Colors -->
+            <div class="container container-inner flex flex-reverse">
+              <div class="two-column">
+                <h2 class="sub-section">Colors</h2>
+                <p class="paragraph">Pouch’s color palette consists of turquoise blues and orange that evoke the fun look I was going for. These complimentary colors work well together, and orange is a vibrant color used for call to action buttons. I kept the color palette from becoming too bright and overwhelming and with muted tones and shades of gray.</p>
+              </div>
+              <div class="two-column">
+                <img class="colors full-image flex-image" src="images/pouch/colors.png" alt="Pouch Colors">
+              </div>
             </div>
+
+            <!-- Typography   -->
+            <div class="container container-inner flex hide-mobile">
+              <div class="two-column">
+                <h2 class="sub-section">Typography</h2>
+                <p class="paragraph">Sansita One and Poppins work well with the logo and other elements used in the design as they all contain soft, rounded edges for a cohesive look. Sansita One is used sparingly on headings, while Poppins is used for most elements throughout the application. Poppins has a sense of friendliness and has high legibility and many font weights to choose from.</p>
+              </div>
+              <div class="two-column">
+                <img class="fonts full-image flex-image" src="images/pouch/type.png" alt="Pouch Fonts">
+              </div>
+            </div>
+
+
           </div>
 
         <div class="container">
-          <h2 class="sub-section">Logo</h2>
-          <p class="paragraph space-below">The logo for Pouch is a kangaroo. This logo represents Pouch as a safe place to store what’s most important, similarly to how a kangaroo uses its pouch.</p>
+            <div class="container-inner center">
+            <h2 class="sub-section">Logo</h2>
+            <p class="paragraph space-below">The logo for Pouch is a kangaroo. This logo represents Pouch as a safe place to store what’s most important, similarly to how a kangaroo uses its pouch.</p>
+          </div>
           <div class="pouch-logos">
             <img class="full-image space-below" src="images/pouch/logo-sketches.png" alt="Pouch Sketches">
-            <img class="full-image gap" src="images/pouch/pouch-logo-mobile.png" alt="Pouch Logo">
+            <img class="full-image gap hide-tablet" src="images/pouch/pouch-logo-mobile.png" alt="Pouch Logo">
+            <img class="full-image gap hide-mobile" src="images/pouch/pouch-logo-desktop.jpg" alt="Pouch Logo">
           </div>
         </div>
       </section>
@@ -147,32 +189,34 @@
         <h1 class="new-section">Wireframes & Testing</h1>
         <img class="full-screen-width buffer space-below" src="images/pouch/sketches.jpg" alt="Sketches">
         <div class="container">
-          <h2 class="sub-section">Sketches & wireframes</h2>
-          <p class="paragraph space-below">With user stories, user flows, and a sitemap complete, I was able to use these as direction for creating sketches and wireframes to see the functionality of the app, determine a hierarchy of information, and create a grid structure. Once completed, the wireframes were turned into a clickable prototype on InVision for testing.</p>
-          <img class="full-image space-below" src="images/pouch/wireframe1.png" alt="Desktop Wireframe">
-          <img class="full-image space-below" src="images/pouch/wireframe2.png" alt="Desktop Wireframe">
-          <img class="full-image space-below" src="images/pouch/wireframe3.png" alt="Desktop Wireframe">
-          <img class="full-image space-below" src="images/pouch/wireframe5.png" alt="Desktop Wireframe">
-          <img class="full-image space-below" src="images/pouch/wireframe6.png" alt="Desktop Wireframe">
-          <img class="full-image gap" src="images/pouch/wireframe7.png" alt="Mobile Wireframes">
+          <div class="container-inner center">
+            <h2 class="sub-section">Sketches & wireframes</h2>
+            <p class="paragraph space-below">With user stories, user flows, and a sitemap complete, I was able to use these as direction for creating sketches and wireframes to see the functionality of the app, determine a hierarchy of information, and create a grid structure. Once completed, the wireframes were turned into a clickable prototype on InVision for testing.</p>
+          </div>
+          <img class="full-image space-below hide-tablet" src="images/pouch/wireframes-mobile1.png" alt="Desktop Wireframe">
+          <img class="full-image space-below hide-tablet" src="images/pouch/wireframes-mobile2.png" alt="Desktop Wireframe">
+          <img class="full-image space-below hide-tablet" src="images/pouch/wireframes-mobile3.png" alt="Mobile Wireframes">
+          <img class="full-image gap hide-tablet" src="images/pouch/wireframes-mobile4.png" alt="Mobile Wireframes">
+          <img class="full-image space-below hide-mobile" src="images/pouch/wireframes-desktop.png" alt="Desktop Wireframs">
+          <img class="full-image gap hide-mobile" src="images/pouch/wireframes-desktop2.png" alt="Mobile Wireframs">
         </div>
 
-        <div class="container">
+        <div class="container container-inner">
           <h2 class="sub-section">Testing</h2>
           <p class="paragraph">Testing was done throughout the design process. Based on early feedback from wireframes, I was able to make changes before taking the time to create the mockups. Both usability testing and A/B testing gave me an idea of what the design was getting right, but even more importantly this gave me great insight into areas that needed improvement.</p>
         </div>
 
-        <div class="background">
+        <div class="background test-background">
           <div class="test container">
             <img class="full-image buffer" src="images/pouch/test1.png" alt="Dashboard change from testing">
-            <p class="paragraph">In my original design, recent files were listed above the rest of the files. After testing, a separate recent files tab was created to clear up space on the dashboard.</p>
+            <p class="paragraph test-description">In my original design, recent files were listed above the rest of the files. After testing, a separate recent files tab was created to clear up space on the dashboard.</p>
           </div>
         </div>
 
-        <div class="background end-of-section">
-          <div class="test container">
+        <div class="background end-of-section test-background">
+          <div class="test container flex-reverse">
             <img class="full-image buffer" src="images/pouch/test2.png" alt="Folder change from testing">
-            <p class="paragraph">When creating a folder it wasn’t clear to users that they could click on a folder to change its color. A colored drop with a down arrow next to the folder icon was added and immediately resolved this issue.</p>
+            <p class="paragraph test-description">When creating a folder it wasn’t clear to users that they could click on a folder to change its color. A colored drop with a down arrow next to the folder icon was added and immediately resolved this issue.</p>
           </div>
         </div>
       </section>
@@ -180,11 +224,11 @@
       <!-- FINAL DESGIN -->
       <section class="final">
         <h1 class="new-section">Final Design</h1>
-        <div class="container">
+        <div class="container container-inner">
           <p class="paragraph">After putting all that research, testing, and branding work together, Pouch delivers a clean and friendly design for for saving files, creating documents, and sharing and collaborating on content. Everything that a user needs to save, both personal files and web links, can be saved together in one place, and these files can then be found more easily through tagging and custom organization features. </p>
         </div>
-          <img class="full-screen-width" src="images/pouch/final-design-mobile.png" alt="Final design for Pouch">
-
+          <img class="full-screen-width final-mockups hide-tablet" src="images/pouch/final-design-mobile.png" alt="Final design for Pouch">
+          <img class="full-screen-width final-mockups hide-mobile" src="images/pouch/final-design-desktop.png" alt="Final design for Pouch">
           <div class="background prototypes-container">
             <div class="prototype">
               <a class="upper semi-bold buffer" href="https://invis.io/U6PEPT553MC" target="_blank"><i class="fas fa-mobile-alt buffer mobile-icon"></i></a>
@@ -196,10 +240,10 @@
       <!-- CONCLUSION -->
       <section class="conclusion">
         <h1 class="new-section">Conclusion</h1>
-        <div class="container">
+        <div class="container container-inner">
           <p class="paragraph space-below">At the start of this project I had doubts about how I would create a product that successfully differentiates itself in the market of cloud storage, given how many services already exist and how popular applications like Google Drive are. Based on my own experiences, I felt one area that could vastly use improvement was organization features, and it was through the process of conducting user surveys and testing that I discovered others felt exactly the same way.</p>
           <h5 class="small-title">Lessons learned</h5>
-          <p class="paragraph page-bottom">One major takeaway I had while working on Pouch was just how crucial user testing and the feedback I received was. In addition to providing a focus for my application, this feedback dictated changes through every iteration. From big changes like the navigation of the app, to smaller changes like the colors of the buttons, I used this feedback to continually improve my design. I also realized that features that might make sense to me, the designer who already knows how the application works, might not be clear to others unfamiliar with the project. One example of this was when it wasn’t obvious the color of a folder could be changed by clicking on its icon. It was only after testing and getting insight from potential users that I was able to see the problem and provide a solution to fix it.</p>
+          <p class="paragraph page-bottom">One major takeaway I had while working on Pouch was just how crucial user testing and the feedback I received was. In addition to providing a focus for my application, this feedback dictated changes through every iteration. From big changes like the navigation of the app, to smaller changes like the colors of the buttons, I used this feedback to continually improve my design. I also realized that features that might make sense to me, someone who already knows how the application works, might not be clear to others unfamiliar with the project. One example of this was when it wasn’t obvious the color of a folder could be changed by clicking on its icon. It was only after testing and getting insight from potential users that I was able to see the problem and provide a solution to fix it.</p>
         </div>
       </section>
 

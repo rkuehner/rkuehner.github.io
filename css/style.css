@@ -22,11 +22,6 @@ p {
   font-size: 1.6rem;
 }
 
-.paragraph {
-  line-height: 160%;
-  padding: 10px 0;
-}
-
 .semi-bold {
   font-weight: 600;
 }
@@ -80,10 +75,15 @@ a:hover {
   color: #1A9BB0;
 }
 
-/* MARGINS */
+/* MARGINS AND SPACING*/
 .container {
   margin: 0 auto;
   width: 90%;
+}
+
+.paragraph {
+  line-height: 160%;
+  padding: 10px 0;
 }
 
 .center {
@@ -290,7 +290,7 @@ footer > p {
 
 .pouch-name {
   margin-top: 70px;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   width:124px;
 }
 
@@ -312,11 +312,6 @@ footer > p {
 /* ABOUT */
 .about-home {
   padding: 100px 0;
-}
-
-.about > h2 {
-  border-bottom: 1px solid #241F20;
-  padding-bottom: 10px;
 }
 
 .about > p {
@@ -347,6 +342,8 @@ footer > p {
 
 .rkimage {
   background-color: #FDF2F4;
+  display: block;
+  margin: 0 auto;
   max-width: 90vw;
   position: relative;
   top: -21rem;
@@ -361,16 +358,17 @@ footer > p {
 
 .horizontal-line {
   border-bottom: 1px solid #241F20;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .about-me > div {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 /*Say hello */
 .connect {
   background-color: #F5F5F5;
+  margin: 0 auto;
   padding: 3.5rem 0;
   position: relative;
   text-align: center;
@@ -382,8 +380,10 @@ footer > p {
   max-width: 90%;
 }
 
-.connect > .playfair-heading {
+.connect-heading {
   font-size: 2.6rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #241F20;
 }
 
 .contact-container > .paragraph {
@@ -398,16 +398,7 @@ footer > p {
   margin-top: 11rem;
 }
 
-.new-section {
-  background-color: #1A9BB0;
-  color: white;
-  font-size: 2.4rem;
-  margin: 30px 0 40px 0;
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-.cs-hero > .sub-heading {
+.cs-hero-info > .sub-heading {
   padding: 1.5rem 0;
 }
 
@@ -423,6 +414,15 @@ footer > p {
 
 
 /* Sections and Spacing */
+.new-section {
+  background-color: #1A9BB0;
+  color: white;
+  font-size: 2.4rem;
+  margin: 30px 0 40px 0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
 .sub-section {
   font-family: 'Raleway', sans-serif;
   font-size: 1.8rem;
@@ -468,6 +468,7 @@ footer > p {
 .quote {
   border-left: 2px solid #241F20;
   font-weight: 500;
+  line-height: 130%;
   margin: 20px 0;
   padding-left: 15px;
 }
@@ -477,10 +478,10 @@ footer > p {
   width: 90vw;
 }
 
-.images-flex {
-  display: flex;
-  flex-direction: row;
-  width: 90vw;
+
+/* Final Design */
+.final-mockups {
+  margin-top: 30px;
 }
 
 
@@ -548,7 +549,7 @@ footer > p {
 }
 
 .fonts, .colors {
-  max-width: 350px;
+  max-width: 450px;
   padding: 20px 0 50px 0;
 }
 
@@ -562,6 +563,8 @@ footer > p {
   margin: 2rem 0;
   padding: 2rem 0;
 }
+
+
 
 /* Final Design */
 .prototype {
@@ -580,9 +583,10 @@ footer > p {
 }
 
 .prototypes-container {
-  padding: 50px 0;
   margin-bottom: 100px;
+  padding: 50px 0;
 }
+
 
 
 /* FINAL SPACING */
@@ -596,7 +600,7 @@ footer > p {
 }
 
 
-/***************** RESPONSIVE DESIGN ******************/
+/************************************* RESPONSIVE DESIGN ******************************************/
 
 /*** MOBILE ***/
 @media screen and (max-width: 767px) {
@@ -608,13 +612,40 @@ footer > p {
 
 
 
-/*** TABLETS ***/
+/****** TABLETS ******/
 @media screen and (min-width: 768px) {
   .hide-tablet {
     display: none;
   }
 
-/* HOMEPAGE */
+  .container-inner {
+    max-width: 700px;
+  }
+
+
+
+  /* Flex Two Column */
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .two-column {
+    margin: 0;
+    width: 47%;
+  }
+
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+
+
+
+
+
+/*** HOMEPAGE ***/
 /* Header */
   li.left {
     padding-right: 10px;
@@ -673,7 +704,6 @@ footer > p {
   }
 
 
-
   /* About Me */
   .about-home {
     display: flex;
@@ -689,6 +719,87 @@ footer > p {
 
 
 
+  /*** ABOUT PAGE ***/
+  .about-image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+
+  .rkimage {
+    align-self: center;
+    margin: 0;
+    width: 48%;
+  }
+
+  .contact-container {
+    width: 545px;
+  }
+
+
+
+  /*** POUCH CASE STUDY ***/
+
+  /* Personas */
+
+  .flex-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .persona-bullets {
+    width: 100%;
+  }
+
+
+/* Branding */
+
+
+
+
+
+
+
+
+
+  /* Testing */
+  .test-background {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .test {
+    display: flex;
+    width: 95%;
+  }
+
+  .test > img {
+    align-self: center;
+    height: auto;
+    margin: 0 20px;
+    width: 70%;
+  }
+
+  .test-description {
+    font-size: 1.5rem;
+  }
+
+
+
+
+
+
+
+/* END SPACING */
+  .end-of-section {
+    margin-bottom: 100px;
+  }
+
+
+
 }
 
 
@@ -696,15 +807,23 @@ footer > p {
 
 
 /*** DESKTOP ***/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   html {
     font-size: 11px;
   }
 
   /* Max width of container */
-  .container, .pouch-hero-image, .full-image, .projects-container {
+  .container, .pouch-hero-image, .full-image, .projects-container, .test-background {
     max-width: 1200px;
   }
+
+  .container-inner {
+    max-width: 730px;
+  }
+
+
+
+
 
 
   /*** Homepage ***/
@@ -730,6 +849,14 @@ footer > p {
     align-self: center;
     max-width: 70%;
   }
+
+
+  /* Pouch Case Study */
+    .test > img {
+      width: 80%;
+    }
+
+
 
 
 
