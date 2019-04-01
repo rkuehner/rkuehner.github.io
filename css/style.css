@@ -523,6 +523,11 @@ footer > p {
   padding-bottom: 10px;
 }
 
+/* Personas */
+.persona {
+  margin: 0;
+}
+
 /* Information Architecture */
 .ia-image {
   background-image: url("../images/pouch/user-flows.png");
@@ -573,12 +578,12 @@ footer > p {
   flex-direction: column;
 }
 
-.mobile-icon {
+.device-icon {
   color: #FF668A;
   font-size: 10rem;
 }
 
-.mobile-icon:hover {
+.device-icon:hover {
   color: #1A9BB0;
 }
 
@@ -607,7 +612,6 @@ footer > p {
 .hide-mobile {
   display: none;
   }
-
 }
 
 
@@ -742,8 +746,8 @@ footer > p {
 
   /*** POUCH CASE STUDY ***/
 
-  /* Personas */
 
+  /* Personas */
   .flex-image {
     height: auto;
     width: 100%;
@@ -752,13 +756,6 @@ footer > p {
   .persona-bullets {
     width: 100%;
   }
-
-
-/* Branding */
-
-
-
-
 
 
 
@@ -787,6 +784,16 @@ footer > p {
     font-size: 1.5rem;
   }
 
+  /* Final Design */
+.prototypes-container {
+  justify-content: center;
+}
+
+.prototype {
+  margin: 6rem;
+}
+
+
 
 
 
@@ -807,6 +814,7 @@ footer > p {
 
 
 /*** DESKTOP ***/
+
 @media screen and (min-width: 1025px) {
   html {
     font-size: 11px;
@@ -856,18 +864,29 @@ footer > p {
       width: 80%;
     }
 
+  /* Overview */
+  .overview-info {
+    position: relative;
+  }
 
 
-
-
-
-
+  .right-align-image {
+    height: 650px;
+    position: absolute;
+    top: 1594px;
+    right: 0;
+    width: auto;
+  }
 
 }
 
 
-
-
+/* DESKTOP WIDE SCREEN */
+@media screen and (max-width: 1329px) {
+  .view-desktop {
+    display: none;
+  }
+}
 
 
 
